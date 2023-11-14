@@ -1,0 +1,76 @@
+.cards{
+    padding: 80px 0 0px;
+    .cards-content{
+        width: 1150px;
+        height: 555px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+        .card{
+            width: 355px;
+            height: 455px;
+            .card-img{
+                img{
+                    width: 355px;
+                    height: 350px;
+                }
+            }
+            .card-text{
+                padding: 15px 0;
+                p{
+                    font-size: 14.5px;
+                    font-family: $font-roboto;
+                    color: #585858;
+                    font-weight: 300;
+                    line-height: 18px;
+                }
+                .title{
+                    font-size: 17px;
+                    color: black;
+                    font-family: $font-jost;
+                    font-weight: 500;
+                    line-height: 22px;
+                    margin: 10px 0;
+                }
+                .price{
+                    font-size: 15.3px;
+                    font-family: $font-roboto;
+                    font-weight: 600;
+                    color: #585858;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+.comments{
+    padding: 80px 0;
+    h1{
+
+    }
+    .comments-cards{
+        width: 1150px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        .comments-card{
+            width: 365px;
+            height: 255px;
+            i{
+
+            }
+            p{
+                
+            }
+            .comments-img{
+                img{
+
+                }
+            }
+            span{
+
+            }
+        }
+    }
+}

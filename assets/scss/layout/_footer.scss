@@ -1,0 +1,32 @@
+footer{
+    border-top: 1px solid #eaeaea;
+    background-color: white;
+    .footer{
+        display: flex;
+        width: 1200px;
+        height: 105px;
+        align-items: center;
+        .footer-list{
+            width: 250px;
+            height: 30px;
+            display: flex;
+            li{
+                font-size: 15px;
+                font-family: $font-roboto;
+                line-height: 30px;
+                a{
+                    color: #000000;
+                }
+            }
+        }
+        .logo-img{
+            width: 360px;
+            height: 35px;
+            margin-left: 180px;
+        }
+        p{
+            font-size: 15px;
+            font-family: $font-roboto;
+        }
+    }
+}

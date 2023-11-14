@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1350px;
+  .logo {
+    object-fit: contain;
+  }
+  ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-roboto;
+    font-size: 17px;
+    letter-spacing: 2.5px;
+    height: 100px;
+    align-items: center;
+    li {
+      a {
+        color: #000000;
+        &:hover {
+          color: #2c541d;
+        }
+      }
+    }
+
+    .icons {
+        margin-left: 20px;
+      display: flex;
+      height: 100px;
+      align-items: center;
+      .shopping-bag {
+        width: 50px;
+        i {
+          font-size: 26px;
+          line-height: 26px;
+        }
+        sup {
+          color: #ffffff;
+          background-color: #000000;
+          padding: 4px 4px;
+          font-size: 8px;
+          border-radius: 50%;
+        }
+      }
+      .user {
+        padding-top: 6px;
+        font-size: 26px;
+        line-height: 29px;
+      }
+    }
+  }
+}
