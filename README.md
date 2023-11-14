@@ -1,0 +1,1 @@
+# earth-store-template
