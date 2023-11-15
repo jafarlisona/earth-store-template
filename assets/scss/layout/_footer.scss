@@ -3,9 +3,10 @@ footer{
     background-color: white;
     .footer{
         display: flex;
-        width: 1200px;
-        height: 105px;
+        max-width: 1200px;
+        min-height: 105px;
         align-items: center;
+        flex-wrap: wrap;
         .footer-list{
             width: 250px;
             height: 30px;
@@ -20,13 +21,43 @@ footer{
             }
         }
         .logo-img{
-            width: 360px;
+            max-width: 360px;
             height: 35px;
-            margin-left: 180px;
         }
         p{
             font-size: 15px;
             font-family: $font-roboto;
+        }
+    }
+}
+@media only screen and (max-width:768px) and  (min-width:425px){
+    footer{
+        padding: 40px 0;
+        .footer{ 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 20px;
+            .footer-list{
+                width: 300px;
+            }
+
+        }
+    }
+}
+@media only screen and (max-width:425px) and  (min-width:320px){
+    footer{
+        padding: 40px 0;
+        .footer{ 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 10px;
+            .footer-list{
+                width: 300px;
+                height: 90px;
+                flex-direction: column;
+            }
         }
     }
 }

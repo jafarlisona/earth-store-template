@@ -12,7 +12,7 @@ img {
 }
 
 header {
-  background-image: url("https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg");
+  background-image: url("https://websitedemos.net/-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg");
   height: 720px;
   background-size: cover;
   background-position: center;
@@ -55,11 +55,55 @@ header .header button:hover {
   background-color: #2c541d;
 }
 
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  header {
+    height: 500px;
+  }
+  header .header {
+    height: 320px;
+  }
+  header .header h1 {
+    font-size: 58px;
+    letter-spacing: 8px;
+    line-height: 65px;
+  }
+  header .header h2 {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  header {
+    height: 400px;
+  }
+  header .header {
+    height: 250px;
+  }
+  header .header h1 {
+    font-size: 41px;
+    letter-spacing: 5px;
+    line-height: 50px;
+  }
+  header .header h2 {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 3px;
+  }
+  header .header button {
+    letter-spacing: 2px;
+    font-size: 13px;
+    padding: 13px 20px;
+    margin-top: 30px;
+  }
+  header .header button:hover {
+    background-color: #2c541d;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1350px;
+  max-width: 1350px;
 }
 nav .logo {
   object-fit: contain;
@@ -105,16 +149,100 @@ nav ul .icons .user {
   font-size: 26px;
   line-height: 29px;
 }
+nav .menubar {
+  display: none;
+}
 
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  nav .logo {
+    object-fit: contain;
+    margin-left: 30px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .menubar {
+    display: block;
+    display: flex;
+    margin-right: 30px;
+  }
+  nav .menubar .shopping-bag {
+    width: 50px;
+    margin: 20px 0;
+  }
+  nav .menubar .shopping-bag i {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  nav .menubar .shopping-bag sup {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 4px 4px;
+    font-size: 8px;
+    border-radius: 50%;
+  }
+  nav .menubar .menu {
+    margin: 20px 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+  }
+  nav .menubar .menu i {
+    color: white;
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  nav .logo {
+    object-fit: contain;
+    margin-left: 30px;
+    width: 150px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .menubar {
+    display: block;
+    display: flex;
+    margin-right: 30px;
+  }
+  nav .menubar .shopping-bag {
+    width: 50px;
+    margin: 20px 0;
+  }
+  nav .menubar .shopping-bag i {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  nav .menubar .shopping-bag sup {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 4px 4px;
+    font-size: 8px;
+    border-radius: 50%;
+  }
+  nav .menubar .menu {
+    margin: 20px 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+  }
+  nav .menubar .menu i {
+    color: white;
+    padding: 9px;
+    font-size: 12px;
+  }
+}
 footer {
   border-top: 1px solid #eaeaea;
   background-color: white;
 }
 footer .footer {
   display: flex;
-  width: 1200px;
-  height: 105px;
+  max-width: 1200px;
+  min-height: 105px;
   align-items: center;
+  flex-wrap: wrap;
 }
 footer .footer .footer-list {
   width: 250px;
@@ -130,34 +258,61 @@ footer .footer .footer-list li a {
   color: #000000;
 }
 footer .footer .logo-img {
-  width: 360px;
+  max-width: 360px;
   height: 35px;
-  margin-left: 180px;
 }
 footer .footer p {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  footer {
+    padding: 40px 0;
+  }
+  footer .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+  }
+  footer .footer .footer-list {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  footer {
+    padding: 40px 0;
+  }
+  footer .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+  }
+  footer .footer .footer-list {
+    width: 300px;
+    height: 90px;
+    flex-direction: column;
+  }
+}
 .cards {
   padding: 80px 0 0px;
 }
 .cards .cards-content {
-  width: 1150px;
-  height: 555px;
+  max-width: 1150px;
+  min-height: 555px;
   padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .cards .cards-content .card {
-  width: 355px;
-  height: 455px;
+  max-width: 355px;
+  min-height: 455px;
 }
 .cards .cards-content .card .card-img img {
-  width: 355px;
-  height: 350px;
+  max-width: 355px;
+  min-height: 350px;
 }
 .cards .cards-content .card .card-text {
   padding: 15px 0;
@@ -187,13 +342,181 @@ footer .footer p {
 
 .comments {
   padding: 80px 0;
+  border-top: 1px solid #eaeaea;
+}
+.comments h1 {
+  font-size: 41px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  max-width: 1100px;
+  margin-bottom: 50px;
 }
 .comments .comments-cards {
-  width: 1150px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.comments .comments-cards .comments-card {
-  width: 365px;
-  height: 255px;
+.comments .comments-cards .comment-card {
+  max-width: 365px;
+  min-height: 255px;
+}
+.comments .comments-cards .comment-card i {
+  color: #2c541d;
+  line-height: 30px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.comments .comments-cards .comment-card p {
+  color: #585858;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  line-height: 29px;
+  max-width: 295px;
+  margin-right: 80px;
+}
+.comments .comments-cards .comment-card .comments-img {
+  margin: 15px 0;
+}
+.comments .comments-cards .comment-card .comments-img img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.comments .comments-cards .comment-card span {
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: black;
+  line-height: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.postcard {
+  background-image: url("https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Call-to-action.jpg");
+  min-height: 500px;
+  display: grid;
+  place-content: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.postcard h1 {
+  font-family: "Jost", sans-serif;
+  font-size: 41px;
+  letter-spacing: 5px;
+  line-height: 54px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.postcard p {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  line-height: 29px;
+  font-weight: 400;
+  color: #585858;
+}
+.postcard button {
+  line-height: 16px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 3px;
+  font-family: "Roboto", sans-serif;
+  padding: 13px 20px;
+  background-color: #74a84a;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.postcard button:hover {
+  background-color: #2c541d;
+}
+
+.services {
+  padding: 50px 0;
+}
+.services .services-content {
+  max-width: 1150px;
+  min-height: 100px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services .services-content .service-card {
+  max-width: 330px;
+  min-height: 55px;
+  display: flex;
+}
+.services .services-content .service-card .icon-service {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2c541d;
+  display: grid;
+  place-items: center;
+  margin-bottom: 13px;
+  margin-right: 10px;
+}
+.services .services-content .service-card .icon-service i {
+  color: white;
+}
+.services .services-content .service-card .service-text {
+  max-width: 225px;
+  min-height: 55px;
+  padding: 5px 0;
+}
+.services .services-content .service-card .service-text .title {
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  color: black;
+  font-weight: 500;
+  line-height: 25.5px;
+  margin-bottom: 10px;
+}
+.services .services-content .service-card .service-text p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #585858;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  .cards {
+    padding: 70px 0 0px;
+  }
+  .cards .cards-content {
+    min-height: 455px;
+  }
+  .cards .cards-content .card {
+    max-width: 235px;
+    min-height: 355px;
+  }
+  .cards .cards-content .card .card-img img {
+    max-width: 235px;
+    min-height: 230px;
+  }
+  .comments h1 {
+    font-size: 25px;
+  }
+  .postcard h1 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  .comments h1 {
+    font-size: 20px;
+  }
+  .postcard h1 {
+    font-size: 28px;
+  }
+  .postcard p {
+    font-size: 13px;
+  }
+  .postcard button {
+    line-height: 14px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
