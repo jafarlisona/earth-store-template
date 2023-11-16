@@ -42,33 +42,67 @@
       </div>
     </nav>
     <main>
-      <section class="filter">
-        <div class="container-filter">
+      <section class="shop-page">
+        <div class="filter">
+          <div class="container-filter">
             <div class="search">
-                <input type="text" placeholder="Search Products..."/>
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="text" placeholder="Search Products..." />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="double-range">
+              <p>Filter by price</p>
+              <div class="range">
+                <div class="range-slider">
+                  <span class="range-selected"></span>
+                </div>
+                <div class="range-input">
+                  <input
+                    type="range"
+                    class="min"
+                    min="10"
+                    max="30"
+                    value="10"
+                    step="1"
+                  />
+                  <input
+                    type="range"
+                    class="max"
+                    min="10"
+                    max="30"
+                    value="30"
+                    step="1"
+                  />
+                </div>
+                <div class="range-price">
+                  <input type="number" name="min" value="10" />
+                  <input type="number" name="max" value="30" />
+                </div>
               </div>
-              <div class="double-range">
-                  <p>Filter by price</p>
-                  <div class="range">
-                    <div class="range-slider">
-                        <span class="range-selected"></span>
-                      </div>
-                      <div class="range-input">
-                        <input type="range" class="min" min="10" max="30" value="10" step="1">
-                        <input type="range" class="max" min="10" max="30" value="30" step="1">
-                      </div>
-                      <div class="range-price">      
-                        <input type="number" name="min" value="10">      
-                        <input type="number" name="max" value="30">      
-                      </div>
-                  </div>
-              </div>
+            </div>
+            <ul class="categories">
+              <p>Categories</p>
+                  <li>Postcards <span>(6)</span></li>
+                  <li>Posters <span>(6)</span></li>
+            </ul>
+          </div>
         </div>
-      </section>
-        <section class="postcards">
-            <div class="cards-content">
-              <div class="card" >
+        <div class="postcards">
+          <span>Home / Postcards</span>
+          <h1>Postcards</h1>
+          <div class="cards-content">
+            <div class="cards-header">
+              <p>Showing all 6 results</p>
+              <select name="sorting" id="sorting">
+                <option value= "default">Default sorting</option>
+                <option value="popularity">Sort by popularity</option>
+                <option value="average">Sort by average rating</option>
+                <option value="latest">Sort by latest</option>
+                <option value="low">Sort by price: low to high</option>
+                <option value="high">Sort by price: high to low</option>
+              </select>
+            </div>
+            <div class="cards">
+              <div class="card">
                 <div class="card-img">
                   <img
                     src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/11/Postcard1-1000x1000.jpg"
@@ -81,7 +115,7 @@
                   <span class="price">$23.99</span>
                 </div>
               </div>
-              <div class="card" >
+              <div class="card">
                 <div class="card-img">
                   <img
                     src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/PostcardV2-min-1000x1000.jpg"
@@ -94,7 +128,7 @@
                   <span class="price">$17.99</span>
                 </div>
               </div>
-              <div class="card" >
+              <div class="card">
                 <div class="card-img">
                   <img
                     src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/11/Postcard3-1000x1000.jpg"
@@ -107,7 +141,7 @@
                   <span class="price">$14.99</span>
                 </div>
               </div>
-              <div class="card" >
+              <div class="card">
                 <div class="card-img">
                   <img
                     src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/11/Postcard3-1000x1000.jpg"
@@ -120,7 +154,7 @@
                   <span class="price">$23.99</span>
                 </div>
               </div>
-              <div class="card" >
+              <div class="card">
                 <div class="card-img">
                   <img
                     src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/PostcardV2-min-1000x1000.jpg"
@@ -147,6 +181,8 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
@@ -166,6 +202,7 @@
         <p>Copyright © 2023 Planet Earth Store</p>
       </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/shop.js"></script>
   </body>
 </html>

@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+$font-roboto:'Roboto', sans-serif;
+$font-jost: 'Jost', sans-serif;
+$background-color_1: #ededed;
+$background-color_2: #000000;
+$background-color_3: #74a84a;
 *{
     margin: 0 auto;
     padding: 0;
@@ -9,9 +14,14 @@
 img{
     max-width: 100%;
 }
-$font-roboto:'Roboto', sans-serif;
-$font-jost: 'Jost', sans-serif;
-$background-color_1: #ededed;
-$background-color_2: #000000;
-$background-color_3: #74a84a;
-
+.bg-filter{
+    background-color: #00000079;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.scroll{
+    overflow-y: hidden;
+}
